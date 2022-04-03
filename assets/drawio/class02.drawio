@@ -1,0 +1,50 @@
+<mxfile host="65bd71144e">
+    <diagram id="vQG2rVUmP_15jDssrkWm" name="Page-1">
+        <mxGraphModel dx="788" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="30" width="710" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=oval;endFill=0;" parent="1" source="19" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="会員顧客" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="120" width="100" height="78" as="geometry">
+                        <mxRectangle x="160" y="130" width="80" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="19" vertex="1">
+                    <mxGeometry y="26" width="100" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="メールアドレス" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="19" vertex="1">
+                    <mxGeometry y="52" width="100" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="クレジットカード" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneLine=1;strokeColor=default;connectable=1;allowArrows=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="120" width="120" height="104" as="geometry">
+                        <mxRectangle x="390" y="120" width="80" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="カード番号" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="23" vertex="1">
+                    <mxGeometry y="26" width="120" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="有効期限" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="23" vertex="1">
+                    <mxGeometry y="52" width="120" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="名義人名称" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="23">
+                    <mxGeometry y="78" width="120" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;b&gt;1&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="260" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;b&gt;0..1&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="260" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;ul&gt;&lt;li&gt;ECサイトではクレジットカード情報だけを単独で管理しない&lt;/li&gt;&lt;li&gt;会員顧客は1枚だけクレジットカードを登録できる&lt;/li&gt;&lt;li&gt;&lt;span&gt;あるクレジットカードは必ず1人の会員顧客に帰属する&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;複数の顧客でカード情報を使い回すことを管理したいか&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;管理は不要であれば、全く同じクレジットカード情報のインスタンスが複数存在してもよいとする&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="320" width="640" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
