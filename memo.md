@@ -137,3 +137,59 @@
 ![class22](./assets/image/class22.png)
 
 ![class23](./assets/image/class23.png)
+
+---
+
+- 状態遷移図(ステートマシン)
+
+```mermaid
+stateDiagram
+
+  [*] --> 未承認 
+  未承認 --> 承認済
+  未承認 --> 却下
+  承認済 --> [*]
+  却下 --> [*]
+```
+
+![class24](./assets/image/class24.png)
+
+
+```mermaid
+stateDiagram
+
+  [*] --> 仮受注
+  仮受注 --> 受注確定
+  仮受注 --> キャンセル
+  受注確定 --> 請求待ち
+  請求待ち --> 入金済み
+  入金済み --> [*]
+  キャンセル --> [*]
+```
+
+![class25](./assets/image/class25.png)
+
+- [分岐(ガード条件)](https://mermaid-js.github.io/mermaid/#/stateDiagram?id=choice)
+
+```mermaid
+stateDiagram-v2
+
+  state if_state <<choice>>
+  [*] --> if_state
+  if_state --> 出荷準備完了: 在庫あり
+  if_state --> 入荷待ち: 在庫なし
+  入荷待ち --> 出荷準備完了: 
+  出荷準備完了 --> 出荷済み: 出荷
+  出荷済み --> 入金済み: 入金
+  入金済み --> [*]
+```
+
+```mermaid
+stateDiagram-v2
+
+  [*] --> 仮登録
+  仮登録 --> 本登録: 面談の結果,OK
+  仮登録 --> 登録不可: 面談の結果,NG
+  本登録 --> [*]
+  登録不可 --> [*]
+```
