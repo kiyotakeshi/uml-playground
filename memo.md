@@ -219,3 +219,11 @@ stateDiagram-v2
 ![class28](./assets/image/class28.png)
 ![class29](./assets/image/class29.png)
 
+---
+
+- 商品情報をモデルとして考える際は、商品の管理単位が「種類」か「個々のモノ」なのかを考える
+    - 量産品は種類で扱う
+    - 不動産、中古車などの高額商品や一点物を扱う場合は個々のモノで扱う
+
+![class30](./assets/image/class30.png)
+
