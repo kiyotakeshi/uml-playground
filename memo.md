@@ -207,3 +207,9 @@ stateDiagram-v2
   売れ残り --> [*]
   販売済み --> [*]
 ```
+
+- 2つのものを組み合わせた単位で別のものが存在するパターン
+
+![class26](./assets/image/class26.png)
+![class27](./assets/image/class27.png)
+
